@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Pokemon Solid';
+    src: url('./fonts/pokemon-solid.ttf')
+  }
+  
+
+.resultContainer {
+    width: 50%;
+    height: 100vh;
+  
+    background: #0075BE;
+
+    overflow: hidden;
+}
+
+.pokemonResult {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 'image image image image'
+                        'name type abilities vazio';
+}
+
+.resultName {
+    grid-area: name;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+.resultName h1 {
+    font-family: 'Pokemon Solid';
+    font-size: 2em;
+
+    color: #FFCC00;
+    -webkit-text-stroke: 2px #0A285F;
+}
+
+.resultType {
+    grid-area: type;
+    grid-column: 4 / 5;
+    grid-row:  1 / 3;
+
+    height: auto;
+
+}
+
+.resultAbilities {
+    grid-area: abilities;
+    grid-column:  4 / 5;
+    grid-row:  3 / 6;
+
+    height: auto;
+}
+
+.resultImage {
+    grid-area: image;
+    grid-column: 1 / 4;
+    grid-row: 2 / 4;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultName, .resultType, .resultAbilities {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.resultType ul, .resultAbilities ul {
+    list-style: none;
+}
+
+.resultType li, .resultAbilities li {
+    font-family: 'Pokemon Solid';
+    font-size: 1.5em;
+
+    color: #D5A100;
+}
+
+.resultType h2, .resultAbilities h2 {
+    font-family: 'Pokemon Solid';
+    font-size: 1.8em;
+    color: #FFCC00;
+    -webkit-text-stroke: 2px #0A285F;
+}

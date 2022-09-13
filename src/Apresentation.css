@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'Pokemon Solid';
+  src: url('./fonts/pokemon-solid.ttf')
+}
+
+.containerGlobal {
+  display: flex;
+  height: auto;
+}
+
+.apresentation {
+  width: 50%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #0A285F;
+}
+
+.apresentation > img {
+  animation: float 5s ease infinite;
+
+  align-self: center;
+
+  margin: 5em 0 0 0;
+
+}
+
+.apresentation input {
+  width: 60%;
+
+  margin: 3em 0 2.5em 0;
+
+  padding: 1em 2em;
+
+  background: transparent;
+
+  border: 0;
+  border-bottom: 4px solid #fefefe;
+  border-radius: .25em;
+
+  font-family: 'Pokemon Solid';
+  font-size: 1.5em;
+
+  color: #FFCC00;
+
+  outline: none;
+
+  transition: all .5s ease;
+}
+
+
+.apresentation input:hover {
+  border-color: #FFCC00;
+}
+
+.apresentation input::placeholder {
+  color: #fefefe;
+}
+
+.apresentation button {
+  width: 50%;
+
+  border: 4px solid #fefefe;
+  border-radius: .25em;
+
+  background: transparent;
+
+  font-family: 'Pokemon Solid';
+  font-size: 2em;
+
+  color: #fefefe;
+
+  cursor: pointer;
+
+  transition: all .5s ease;
+}
+
+.apresentation button:hover {
+  border-color: #FFCC00;
+
+  color: #FFCC00;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-25px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
