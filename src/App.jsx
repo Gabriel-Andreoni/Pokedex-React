@@ -61,8 +61,8 @@ function App() {
             <section className="resultAbilities">
               <h2>Abilities</h2>
               <ul>
-                {pokemonAbility.map((item) => {
-                  return <li key={item.id}>{item.ability.name}</li>
+                {pokemonAbility.map((item, key) => {
+                  return <li key={key}>{item.ability.name}</li>
                 })}
               </ul>
               
